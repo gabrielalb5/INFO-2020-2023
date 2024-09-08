@@ -1,0 +1,18 @@
+﻿Gabriel Albino - 1º ano de Informática
+Lista 6: exercício 1
+
+
+Inicio_algoritmo
+	declare n1, n2: inteiro;
+	
+	escreval("Digite dois numeros: ");
+	leia(n1);
+	leia(n2);
+	
+	se (n1>n2)
+	então escreva("O maior numero e: ", n1);
+	se (n2>n1)
+	então escreva("O maior numero e: ", n2);
+Fim_algoritmo
+	
+	

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="author" content="Gabriel Albino">
+        <meta charset="UTF-8">
+        <title>Formulário de cadastro</title>
+    </head>
+    <body>
+        <section>
+            <form name="formulario_avaliativo8" action="executar.php" method="post">
+                <label>Nome:</label>
+                <input type="text" name="nome" id="txt1" placeholder="Digite um nome" required>
+                <br><br>
+
+                <label>Senha:</label>
+                <input type="password" name="senha" id="txt2" maxlength="10" placeholder="Digite a senha" required>
+                <br><br>
+
+                <label>E-mail:</label>
+                <input type="email" name="email" id="txt3"placeholder="Digite o e-mail" required>
+                <br><br>
+
+                <label>Data de nascimento:</label>
+                <input type="date" name="nascimento" id="txt4" required>
+                <br><br>
+
+                <label>Categoria:</label>
+                <select name="categoria" id="txt5">
+                    <option value="aluno">Aluno</option>
+                    <option value="professor">Professor</option>
+                    <option value="servidor">Servidor</option>
+                </select>
+                <br><br>
+
+                <label>Interesses:</label><br>
+
+                <input type="checkbox" name="interesse1" id="interesse1" value="esporte">
+                <label for="interesse1">Esporte</label>
+                <br>
+                <input type="checkbox" name="interesse2" id="interesse2" value="politica">
+                <label for="interesse2">Política</label>
+                <br>
+                <input type="checkbox" name="interesse3" id="interesse3" value="economia">
+                <label for="interesse3">Economia</label>
+                <br><br>
+
+                <label>Deseja receber notícias por e-mail?</label><br>
+                
+                <input type="radio" name="opcao" id="sim" value="S">
+                <label for="sim">Sim</label>
+                <input type="radio" name="opcao" id="nao" value="N" required>
+                <label for="nao">Não</label>
+                <br><br>
+
+                <input type="submit" value="Enviar dados">
+                <input type="reset" value="Limpar tudo">
+            </form>
+        </section>
+    </body>
+</html>

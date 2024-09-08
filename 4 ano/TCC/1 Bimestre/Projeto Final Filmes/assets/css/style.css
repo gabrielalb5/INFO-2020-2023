@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+* {
+    font-family: 'Inter', Helvetica;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+input, select{
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+#inicio{
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+#inicio h4{
+  margin-top: 80px;
+}
+
+#inicio a{
+  text-decoration: none;
+}
+
+.input-box{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.input-box span{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.input-box #olho{
+  margin-top: 0px;
+}
+
+#mascara{
+  background-color: rgba(0,0,0,0.5);
+  height: 100vh;
+}

@@ -1,0 +1,16 @@
+/*
+O termo "assets" está relacionado aos recursos que complementam o conteúdo dos websites,
+tais como folhas de estilo, scripts, fontes e imagens.
+*/
+.container {
+  background-color: #d6ecf5; }
+
+.cabecalho {
+  background-color: #ffffff;
+  padding: 10px 0px; }
+
+.formulario {  
+  padding: 10px; }
+
+.criar_conta {
+  padding: 70px 0px 0px 0px; }

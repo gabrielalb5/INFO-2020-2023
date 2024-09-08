@@ -1,0 +1,47 @@
+<?php
+
+function obterConexao() {
+  $servidor = "localhost";
+  $usuario = "web";
+  $senha = "web";
+  $banco = "shoppingvirtual";
+  
+  $conexao = mysqli_connect($servidor, $usuario, $senha, $banco);
+  
+  if ($conexao == FALSE) {
+    echo "Não foi possível conectar ao banco de dados! Erro: " . mysqli_connect_error();
+    die();  
+  }
+  
+  return $conexao;
+}
+
+function listarProdutos() {
+  $lista_produtos = [];
+  $sql = "SELECT * FROM Produto";
+  
+  $conexao = obterConexao();
+  $resultado = mysqli_query($conexao, $sql);
+
+  while ($produto = mysqli_fetch_assoc($resultado)) {
+    array_push($lista_produtos, $produto);
+  }
+
+  mysqli_close($conexao);
+
+  return $lista_produtos;
+}
+
+function inserirProduto($descricao, $valor) {
+  $conexao = obterConexao();
+  $sql = "INSERT INTO Produto (descricao, valor) VALUES ('$descricao', $valor)";
+  $resultado = mysqli_query($conexao, $sql);
+  if ($resultado) {
+    echo "O produto {$descricao} foi adicionado!";
+  } else {
+    echo "O produto {$descricao} não foi adicionado! Erro: ". mysqli_error($conexao);
+  }
+  mysqli_close($conexao);
+}
+
+?>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <title>Relatório notas</title>
+</head>
+<body>
+    <h3>Relatório de notas</h3>
+    <form>
+        <label>Digite o nome: </label>
+        <input type="text" name="nome" id="nome" step=".01" min="0" max="10" required/><br><br>
+        <label>Digite a 1° nota: </label>
+        <input type="number" name="n1" id="n1" step=".01" min="0" max="10" required/><br><br>
+        <label>Digite a 2° nota: </label>
+        <input type="number" name="n2" id="n2" required/><br><br>
+        <label>Frequêcia:</label>
+        <input type="number" name="freq" id="freq" min="0" max="100" required/><br><br>
+        <input type="button" id="btn_media" value="Gerar Relatório"/>
+    </form><br>
+    <div id="relatorio"></div>
+</body>
+</html>

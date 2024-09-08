@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Calibri, sans-serif;
+  background-color: #d1dbf5;
+  padding: 10px 20px; }
+
+header {
+  margin: 20px 0px; }
+
+section {
+  width: 25%; }  
+
+h4 {
+  padding: 5px 0px; }  

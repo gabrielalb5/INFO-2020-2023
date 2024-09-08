@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <title>Cadastro de peça</title>
+</head>
+<body>
+    <div>
+        <header>
+            <nav class="navbar">
+                <div class="navbar-logo"><a href="index.html"><img src="assets/img/LookingMenu.png" alt="Looking" class="logo"></a></div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="cadastro.html">Cadastre-se</a></li>
+                        <li><a href="login.html">Entrar</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    <main class="cadastro2">
+        <div class="containercad">
+            <div class="formcadastro">
+                <form class="form" action="SucessoPeca.html">
+                    <div class="form-header">
+                        <h1 class="cadastroh2">Cadastrar peça</h1>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-box">
+                           <label for="tamanho">Tamanho</label>
+                           <input type="number" id="tamanho" name="tamanho" placeholder="Ex: 42" min="0" max="100" />
+                        </div>
+                        
+                        <div class="input-box">
+                            <label for="DescricaoLoja">Descrição</label>
+                            <input type="text" id="DescricaoLoja" name="DescricaoLoja" placeholder="Digite uma descrição para sua peça"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="tecido">Tecido</label>
+                            <input type="text" id="tecido" name="tecido" placeholder="Digite o tecido"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="marca">Marca</label>
+                            <input type="text" id="marca" name="marca" placeholder="Digite a marca"/>
+                        </div>
+                        
+                        <div class="coluna2">
+                            <div class="input-box">
+                                <label for="imgpeca">Imagem da peça</label>
+                                <input type="file" id="imgpeca" name="imgpeca" accept="image/*"/>
+                            </div>
+                            <div id="img-container">
+                                <img id="preview" src="">
+                            </div>
+                        </div>
+
+                        <label>Disponível para troca/venda?</label>
+                        <input type="radio" id="nao" name="peca">
+                        <label>Não</label>
+                        <input type="radio" id="sim" name="peca">
+                        <label>Sim</label><br><br>
+
+                        
+                    </div>
+
+                    <div class="continue-button2">
+                        <button><a href="SucessoPeca.html">Cadastrar</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="form-image">
+                <img src="assets/img/medindo.svg" alt="ilustração">
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="footer-logo"><a href="#"><img src="assets/img/LookingMenu.png" alt="Looking" class="logo-rodape"></a></div>
+        <p>Copyright&copy; 2022 IFSP - Campus Araraquara</p>
+    </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

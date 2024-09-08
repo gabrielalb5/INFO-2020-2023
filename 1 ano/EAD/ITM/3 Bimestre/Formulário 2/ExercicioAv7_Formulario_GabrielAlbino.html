@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="author" content="Gabriel Albino">
+        <meta charset="UTF-8">
+        <title>Formulário | Cadastro</title>
+        <style>
+            body{
+                background-color: #B6D4D8;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Formulário de cadastro</h1>
+        </header>
+        <section>
+            <form name="formulario_avaliativo7" action="executar.php" method="post">
+                <label>Nome:</label>
+                <input type="text" name="nome" id="txt1" maxlength="30" placeholder="Digite um nome" required>
+                <br><br>
+
+                <label>Endereço:</label>
+                <input type="text" name="endereco" id="txt2" maxlength="50" placeholder="Digite um endereço" required>
+                <br><br>
+
+                <label>Telefone:</label>
+                <input type="text" name="telefone" id="txt3" maxlength="20" placeholder="(00) 0000-00-00" required>
+                <br><br>
+
+                <label>Senha:</label>
+                <input type="password" name="senha" id="txt4" maxlength="10" placeholder="Digite a senha" required>
+                <br><br>
+                
+                <label>Altura (em metros):</label>
+                <input type="number" name="altura" id="txt5" min="0" max="3" step=".01" placeholder="Ex: 1,70" required>
+                <br><br>
+
+                <label>Peso (em gramas):</label>
+                <input type="number" name="peso" id="txt6" min="0" placeholder="Digite seu peso" required>
+                <br><br>
+
+                <label>Escolaridade:</label>
+                <br>
+                <input type="radio" id="fundamental" name="escolaridade" value="F">
+                <label for="fundamental">Fundamental</label>
+                <br>
+                <input type="radio" id="superior" name="escolaridade" value="S">
+                <label for="superior">Superior</label>
+                <br>
+                <input type="radio" id="pos_graduacao" name="escolaridade" value="PG" required>
+                <label for="pos_graduacao">Pós-graduação</label>
+                <br><br>
+
+                <input type="submit" value="Enviar dados">
+                <input type="reset" value="Limpar tudo">
+            </form>
+        </section>
+    </body>
+</html>

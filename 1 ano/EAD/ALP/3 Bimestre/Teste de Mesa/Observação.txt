@@ -1,0 +1,5 @@
+Professora, fiz o teste de mesa baseado no primeiro exemplo em que 
+case 1:	for(i=1;i<=10;i++) e não i<=3, espero que tudo bem.
+Bom fim de ano e até mais!
+Atenciosamente,
+Gabriel Albino - 1º ano de Informática

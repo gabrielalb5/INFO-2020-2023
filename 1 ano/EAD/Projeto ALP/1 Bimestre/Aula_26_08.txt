@@ -1,0 +1,8 @@
+Inicio_algoritmo
+Desclare
+	expressao: real;
+	
+	expressao <- (26/12)+5*((10+(20/3))/(9 mod 2))-(4*(3-8));
+	
+	escreva("Valor da expressao = ", expressao);
+fim_algoritmo

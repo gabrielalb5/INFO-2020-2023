@@ -1,0 +1,25 @@
+Gabriel Albino - 1º ano de Informática
+Lista 7: Exercício 3
+
+Inicio_algoritmo
+	Declare nota: real;
+	
+	escreva("Digite a nota: ");
+	leia(nota);
+	
+	se(nota>=0 e nota<=10) 
+	então
+        se(nota<=5)
+			então escreva(E);
+        senão se(nota>5 e nota<=6)
+			então escreva(D);
+        senão se(nota>6 e nota<=7)
+			então escreva(C);
+        senão se(nota>7 e nota<=8)
+			então escreva(B);
+        senão se(nota>8 e nota<=10)
+			então escreva(A);
+    senão
+        escreva(inválido);
+	fimse
+Fim_algoritmo

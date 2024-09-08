@@ -1,0 +1,19 @@
+Gabriel Albino - 1º ano de Informática
+Lista 7: Exercício 1
+
+Inicio_algoritmo
+	Declare n1, n2: real;
+	
+	escreva("Digite o primeiro numero: ");
+	leia(n1);
+	escreva("Digite o segundo numero: ");
+	leia(n2);
+	
+	se (n1==n2) então
+		escreva("Numeros iguais");
+	senão se (n1>n2) então 
+		escreva("O maior numero é ", n1, "e o menor é ", n2);
+	senão
+		escreva("O maior numero é ", n2, "e o menor é ", n1);
+	fimse
+Fim_algoritmo

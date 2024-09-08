@@ -1,0 +1,240 @@
+Gabriel Albino - 1 ano de informática
+Lista 1 de ALP
+
+
+1) Faça um algoritmo que leia quatro notas, calcule e mostre a média ponderada dessas notas.
+Considere os seguintes pesos para cada nota: 2, 3, 1 e 4.
+
+Inicio_algoritmo
+	Declare n1, n2, n3, n4, m: real
+	
+	Escreva("Digite a primeira nota");
+	Leia(n1);
+	Escreva("Digite a segunda nota");
+	Leia(n2);
+	Escreva("Digite a terceira nota");
+	Leia(n3);
+	Escreva("Digite a quarta nota");
+	Leia(n4);
+	
+	m <- ((n1*2)+(n2*3)+(n3*1)+(n4*4))/(2+3+1+4)
+	
+	Escreva("A media ponderada e :", m);
+Fim-algoritmo
+
+
+Em Linguagem C:
+
+#include<stdio.h>
+int main(){
+
+	float n1, n2, n3, n4, m;
+	
+	printf("Digite a primeira nota: ");
+	scanf("%f", &n1);
+	printf("Digite a segunda nota: ");
+	scanf("%f", &n2);
+	printf("Digite a terceira nota: ");
+	scanf("%f", &n3);
+	printf("Digite a quarta nota: ");
+	scanf("%f", &n4);
+	
+	m = ((n1*2)+(n2*3)+(n3*1)+(n4*4))/(2+3+1+4);
+	
+	printf("A media ponderada e: %.2f", m);
+	
+	return 0;
+}
+
+
+
+
+
+
+2) Faça um algoritmo que leia um número inteiro positivo e maior que zero (a), calcule e
+mostre cada uma das expressões abaixo:
+
+Inicio_algoritmo
+	Declare a, exp1, exp2, exp3: inteiro
+	
+	Escreva("Digite um numero: ");
+	Leia(a);
+	
+	exp1 <- a*a;
+	exp2 <- (a+5)/2;
+	exp3 <- (a*(a+10))/(2*a);
+	
+	Escreva("O valor da expressao 1 é:", exp1);
+	Escreva("O valor da expressao 2 é:", exp2);
+	Escreva("O valor da expressao 3 é:", exp3);
+Fim-algoritmo
+
+
+Em Linguagem C:
+
+#include<stdio.h>
+int main(){
+
+	int a, expressao1, expressao2, expressao3;
+	
+	printf("Digite um numero: ");
+	scanf("%d", &a);
+	
+	expressao1 = a*a;
+	expressao2 = (a+5)/2;
+	expressao3 = (a*(a+10))/(2*a);
+
+	printf("O valor da expressao 1 é: %.d\n", expressao1);
+	printf("O valor da expressao 2 é: %.d\n", expressao2);
+	printf("O valor da expressao 3 é: %.d", expressao3);
+	
+	return 0;
+}
+
+
+
+
+
+
+3)Ler três valores para as variáveis A, B e C. Efetuar a troca dos valores de forma a variável A
+passe a ter o valor de B, a variável B passe a ter o valor de C e que a variável C passe a ter o
+valor de A.
+
+Inicio_algoritmo
+	Declare A, B, C, aux: inteiro
+	
+	Escreva("Digite o valor de A: ");
+	Leia(A);
+	Escreva("Digite o valor de B: ");
+	Leia(B);
+	Escreva("Digite o valor de C: ");
+	Leia(C);
+	
+	aux <- A;
+	A <- B;
+	B <- C;
+	C <- aux;
+	
+	Escreva("O novo valor de A é:", A);
+	Escreva("O novo valor de B é:", B);
+	Escreva("O novo valor de C é:", C);
+Fim-algoritmo
+
+
+Em Linguagem C:
+
+#include<stdio.h>
+int main(){
+
+	int A, B, C, aux;
+	
+	printf("Digite o valor de A: ");
+	scanf("%d", &A);
+	printf("Digite o valor de B: ");
+	scanf("%d", &B);
+	printf("Digite o valor de C: ");
+	scanf("%d", &C);
+	
+	aux = A;
+	A = B;
+	B = C;
+	C = aux;
+	
+	printf("O novo valor de A é: %d\n", A);
+	printf("O novo valor de B é: %d\n", B);
+	printf("O novo valor de C é: %d", C);
+	
+	return 0;
+}
+
+
+
+
+4) Maria foi ao mercado e levou para pagar uma nota de 100 reais. A tabela abaixo mostra a
+quantidade e o preço dos produtos que ela comprou. Ao montar seu algoritmo, crie uma
+variável para armazenar cada um desses valores. O algoritmo deve mostrar qual o troco
+recebido após Maria pagar a compra.
+
+
+#include <stdio.h>
+int main(){
+    
+    float reais, troco, akg, a, bkg, b, rg, r, fekg, fe, frkg, fr;
+    
+    printf("Digite quantos reais serão usados para pagar: ");
+    scanf("%f", &reais);
+    printf("Digite a quantidade de arroz em kg: ");
+    scanf("%f", &akg);
+    printf("Digite a quantidade de batatas em kg: ");
+    scanf("%f", &bkg);
+    printf("Digite a quantidade de garrafas de refrigerante: ");
+    scanf("%f", &rg);
+    printf("Digite a quantidade de feijão em kg: ");
+    scanf("%f", &fekg);
+    printf("Digite a quantidade de frango em kg: ");
+    scanf("%f", &frkg);
+    
+    a = (akg*1.80);
+    b = (bkg*2.50);
+    r = (rg*2.60);
+    fe = (fekg*3.40);
+    fr = (frkg*5.90);
+
+    troco = reais-(a+b+r+fe+fr);
+    
+    printf("Maria receberá R$%.2f de troco", troco);
+
+    return 0;
+}
+
+
+
+
+
+5) Ana quer comprar uma TV. Sabe-se que o valor à vista tem 10% de desconto e o valor em
+duas parcelas tem 2% de acréscimo. Faça um algoritmo que leia o valor da TV, calcule e mostre
+o valor para pagamento à vista e para o pagamento em duas parcelas mostre: o valor de cada
+parcela e o valor total em duas vezes.
+
+
+
+Inicio_algoritmo
+	Declare valor, avista, aprazo, vparc: real;
+
+	escreva("Digite o valor da TV: R$");
+	leia (valor);
+	
+	avista <- valor-(0.1*valor);
+	aprazo <- valor+(valor*0.02);
+	vparc <- aprazo/2;
+
+	escreva("valor a vista: R$", avista);
+	escreva("valor a prazo: R$", aprazo);
+	escreva("valor de cada parcela a prazo: R$", vparc);
+fim_algoritmo
+
+
+Em linguagem C:
+
+
+#include <stdio.h>
+int main(){
+
+	float valor, avista, aprazo, vparc;
+
+	printf("Digite o valor da TV: R$");
+	scanf("%f", &valor);
+	
+	avista = valor - (0.1*valor);
+	aprazo = valor + (valor+0.02);
+	vparc = aprazo/2;
+	
+	printf("valor a vista: R$ %.2f", avista);
+	printf("valor a prazo: R$ %.2f", aprazo);
+	printf("valor de cada parcela a prazo: R$ %.2f", vparc);
+	
+	return (0);
+}
+	
+	
+	

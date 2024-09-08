@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="author" content="Gabriel Albino">
+        <meta charset="UTF-8">
+        <title>Nome, sexo e escolaridade</title>
+        <style>
+            table, td{
+                border: 1px solid black;
+            }
+            td{
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <form name="formulario_avaliativo9" action="executar.php" method="post">
+                <table>
+                    <tr>
+                        <td><label>Nome:</label></td>
+                        <td><input type="text" name="nome" id="txt1" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>sexo:</label></td>
+                        <td>
+                            <input type="radio" name="sexo" id="feminino" value="F">
+                            <label for="feminino">Feminino</label>
+                            <input type="radio" name="sexo" id="masculino" value="M" required>
+                            <label for="masculino">Masculino</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label>Escolaridade:</label>
+                            <select name="escolaridade" id="txt2">
+                                <option value="grau1">1º grau</option>
+                                <option value="grau2">2º grau</option>
+                                <option value="superior">superior</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </body>
+</html>

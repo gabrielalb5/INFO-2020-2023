@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="author" content="Gabriel Albino">
+        <meta charset="UTF-8">
+        <title>Cartão de crédito</title>
+        <style>
+            table, td{
+                border: 1px solid black;
+            }
+            td{
+                padding: 10px;
+            }
+            table{
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <form name="formulario_avaliativo10" action="executar.php" method="post">
+                <table>
+                    <tr>
+                        <td><label>Número:</label></td>
+                        <td><input type="number" name="numero" id="txt1" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Bandeira:</label></td>
+                        <td>
+                            <input type="radio" name="bandeira" id="visa" value="V">
+                            <label for="visa"><img src="visa.png" alt="Visa"></label><br>
+
+                            <input type="radio" name="bandeira" id="mastercard" value="M">
+                            <label for="mastercard"><img src="mastercard.png" alt="Mastercard"></label><br>
+
+                            <input type="radio" name="bandeira" id="americanexpress" value="A" required>
+                            <label for="americanexpress"><img src="americanexpress.png" alt="American Express"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Validade:</label></td>
+                        <td>
+                            <select name="validade" id="txt2">
+                                <option value="2012">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </body>
+</html>

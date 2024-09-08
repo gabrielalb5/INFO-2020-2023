@@ -1,0 +1,12 @@
+1) Sobre funções:
+
+a) Defina, com suas palavras, o que é uma função.
+Uma função é uma sequência de instruções, geralmente criada separadamente em uma página específica para funções, e que pode ser chamada para executar certa tarefa determinada (geralmente quando feita separadamente deve-se incluir através de um include a página que a função está inserida e depois chamá-la)
+
+b) Por que utilizamos funções em PHP?
+As funções são feitas geralmente para a organização, facilitando a sua alteração por exemplo, e também para a utilização da função em mais de um código sem precisar copiar os passos descritos para todas as páginas, mas sim apenas chamando a função necessária.
+
+2) As sessões são utilizadas para armazenar valores, assim como um vetor, e também é uma superglobal, ou seja, pode ser "chamada" em qualquer lugar entre páginas diferentes, facilitando a recuperação de dados.
+
+3) b) O elemento “São Paulo” será adicionado no final do array.
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="author" content="Gabriel Albino">
+        <meta charset="UTF-8">
+        <title>Formulário de cadastro</title>
+        <style>
+            h1{
+                margin: 20px;
+            }
+            form{
+                border: 1px solid #ccc;
+                width: 30%;
+                margin: 20px;
+                padding: 15px;
+            }
+            label{
+                font-size: 15px;
+                width: 100%;
+            }
+            #id1{
+                display: block;
+            }
+            input, select{
+                margin-bottom: 10px;
+                padding: 10px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+            }
+            #txt{
+                width: 100%;
+            }
+            input:focus, select:focus{
+                border: 2px solid #315E82;
+            }
+            input[type="submit"], input[type="reset"]{
+                background:  #315E82;
+                color: white;
+                border: none;
+            }
+            input[type="submit"]:hover, input[type="reset"]:hover{
+                background: #5B84A5;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Formulário de cadastro</h1>
+        </header>
+        <section>
+            <form name="formulario_avaliativo8" action="executar.php" method="post">
+                <label id="id1">Nome:</label>
+                <input type="text" name="nome" id="txt" placeholder="Digite um nome" required>
+                <br><br>
+
+                <label id="id1">Senha:</label>
+                <input type="password" name="senha" id="txt" maxlength="10" placeholder="Digite a senha" required>
+                <br><br>
+
+                <label id="id1">E-mail:</label>
+                <input type="email" name="email" id="txt"placeholder="Digite o e-mail" required>
+                <br><br>
+
+                <label id="id1">Data de nascimento:</label>
+                <input type="date" name="nascimento" id="txt" required>
+                <br><br>
+
+                <label id="id1">Categoria:</label>
+                <select name="categoria" id="txt">
+                    <option value="aluno">Aluno</option>
+                    <option value="professor">Professor</option>
+                    <option value="servidor">Servidor</option>
+                </select>
+                <br><br>
+
+                <label>Interesses:</label><br>
+
+                <input type="checkbox" name="interesse1" id="interesse1" value="esporte">
+                <label for="interesse1">Esporte</label>
+                <br>
+                <input type="checkbox" name="interesse2" id="interesse2" value="politica">
+                <label for="interesse2">Política</label>
+                <br>
+                <input type="checkbox" name="interesse3" id="interesse3" value="economia">
+                <label for="interesse3">Economia</label>
+                <br><br>
+
+                <label>Deseja receber notícias por e-mail?</label><br>
+                
+                <input type="radio" name="opcao" id="sim" value="S">
+                <label for="sim">Sim</label>
+                <input type="radio" name="opcao" id="nao" value="N" required>
+                <label for="nao">Não</label>
+                <br><br>
+
+                <input type="submit" id="txt" value="Enviar dados">
+                <input type="reset" id="txt" value="Limpar tudo">
+            </form>
+        </section>
+    </body>
+</html>

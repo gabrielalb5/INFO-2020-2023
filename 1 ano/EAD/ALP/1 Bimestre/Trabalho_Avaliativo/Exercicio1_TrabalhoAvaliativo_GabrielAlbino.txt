@@ -1,0 +1,20 @@
+Gabriel Albino - 1º ano de Informática
+Trabalho avaliativo: exercício 1
+
+1) Crie um algoritmo onde um usuário entre com a distância 
+percorrida(em Km) e o tempo gasto (em horas).
+O programa deverá calcular a velocidade
+média desta viagem e exibir ao usuário (em Km/h).
+
+Inicio_algoritmo
+	Declare d, t, v: real
+	
+	Escreva("Digite a distancia percorrida (em Km): ");
+	Leia(d);
+	Escreva("Digite o tempo gasto (em Horas): ");
+	Leia(t);
+	
+	v <- d/t;
+	
+	Escreva("A velocidade e = ", v, "Km/h");
+Fim_algoritmo

@@ -1,0 +1,152 @@
+Gabriel Albino - 1 ano de informática
+Lista 4 de ALP
+
+
+1) Faça um programa que leia o ano de nascimento de uma pessoa e o ano atual, calcule e mostre:
+a)A idade da pessoa
+b)Quantos anos essa pessoa terá em 2055
+
+Inicio_algoritmo
+	ano_nasc, ano_atual, idade_hoje, idade_2055: inteiro;
+	
+	Escreva("Digite o ano de nascimento: ");
+    Leia(ano_nasc);
+    Escreva("Digite o ano atual: ");
+    Leia(ano_atual);
+	
+	idade_hoje <- ano_atual-ano_nasc;
+    idade_2055 <- 2055-ano_nasc;
+	
+	Escreval("A idade atual é de: ", idade_hoje, "anos");
+    Escreva("A idade em 2055 sera de: ", idade_2055, "anos");
+Fim_algoritmo
+
+Em linguagem C:
+
+#include <stdio.h>
+int main(){
+    
+    int ano_nasc, ano_atual, idade_hoje, idade_2055;
+    
+    printf("Digite o ano de nascimento: ");
+    scanf("%d", &ano_nasc);
+    printf("Digite o ano atual: ");
+    scanf("%d", &ano_atual);
+    
+    idade_hoje = ano_atual-ano_nasc;
+    idade_2055 = 2055-ano_nasc;
+    
+    printf("A idade atual é de: %d anos\n", idade_hoje);
+    printf("A idade em 2055 sera de: %d anos", idade_2055);
+
+    return 0;
+}
+
+===================================================================================================
+
+2) Faça um programa que leia o ano de nascimento de uma pessoa e o ano atual, calcule e mostre:
+	A idade da pessoa
+	Quantos anos essa pessoa terá em 2055
+
+Inicio_algoritmo
+	ano_nasc, ano_atual, idade_hoje, idade_2055: inteiro;
+	
+	Escreva("Digite o ano de nascimento: ");
+    Leia(ano_nasc);
+    Escreva("Digite o ano atual: ");
+    Leia(ano_atual);
+	
+	idade_hoje <- ano_atual-ano_nasc;
+    idade_2055 <- 2055-ano_nasc;
+	
+	Escreval("A idade atual é de: ", idade_hoje, "anos");
+    Escreva("A idade em 2055 sera de: ", idade_2055, "anos");
+Fim_algoritmo
+
+Em linguagem C:
+
+#include <stdio.h>
+int main(){
+    
+    int ano_nasc, ano_atual, idade_hoje, idade_2055;
+    
+    printf("Digite o ano de nascimento: ");
+    scanf("%d", &ano_nasc);
+    printf("Digite o ano atual: ");
+    scanf("%d", &ano_atual);
+    
+    idade_hoje = ano_atual-ano_nasc;
+    idade_2055 = 2055-ano_nasc;
+    
+    printf("A idade atual é de: %d anos\n", idade_hoje);
+    printf("A idade em 2055 sera de: %d anos", idade_2055);
+
+    return 0;
+}
+
+===================================================================================================
+
+3) Faça um programa que leia dois números inteiros positivos (n1 e n2),
+calcule e mostre os valores de x, y e z.
+
+Em linguagem C:
+
+#include <stdio.h>
+#include <math.h>
+int main(){
+    
+    int n1, n2;
+    float x, y, z;
+
+    printf("Digite o valor de n1: ");
+    scanf("%d", &n1);
+    printf("Digite o valor de n2: ");
+    scanf("%d", &n2);
+    
+    x = pow(n1,3)/3;
+    y = (pow(n1,2)+pow(n2,2))/(n2-n1);
+    z = (sqrt(n1+n2)+pow(n2,3))/((10*n2)/2);
+    
+    printf("O valor de x e = %.2f\n", x);
+    printf("O valor de y e = %.2f\n", y);
+    printf("O valor de z e = %.2f\n", z);
+    
+    return 0;
+}
+
+===================================================================================================
+
+4) Sabe-se que o quilowatt de energia custa 2% do salário mínimo. Faça
+um programa que receba o valor do salário mínimo e a quantidade de
+quilowatts consumida por um residência. Calcule e mostre:
+a) O valor, em reais, de cada quilowatt;
+b) O valor, em reais, a ser pago por essa residência;
+c) O valor, em reais, a ser pago com desconto de 15%.
+
+Em linguagem C:
+
+#include <stdio.h>
+int main(){
+    
+    int sal, qwatt;
+    float val_qwatt, val;
+    
+    printf("Digite o valor do salario: R$");
+    scanf("%d", &sal);
+    printf("Digite a quantidade de quilowatts: ");
+    scanf("%d", &qwatt);
+    
+    val = (sal*2)/100;
+    val_qwatt = val/qwatt;
+    
+    printf("O valor de cada quilowatt é de aproxiamdamente R$%.2f\n", val_qwatt);
+    printf("O valor a ser pago é de R$%.2f\n", val);
+    
+    val = val - ((val*15)/100);
+    
+    printf("O valor com desconto de 15 porcento sera de R$%.2f", val);
+
+    return 0;
+}
+
+

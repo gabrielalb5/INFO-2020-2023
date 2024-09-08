@@ -1,0 +1,29 @@
+<!--
+  Utilização do evento onclick diretamente nos elementos html
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo HTML com código Js</title>
+  <script src="js/script.js"></script>  
+</head>
+<body>
+    <form>
+      <fieldset>
+        <legend>Soma de dois números:</legend>
+        <label for="id_nro1">
+          Valor 1: 
+          <input type="text" id="id_nro1" name="nro1">
+        </label>
+        <label for="id_nro2">
+          Valor 2: 
+          <input type="text" id="id_nro2" name="nro2">
+        </label>
+        <input type="button" id="btn_somar" value="Calcular" onclick="somar();">
+      </fieldset>
+    </form>
+    <div id="id_resultado"></div>
+</body>
+</html>

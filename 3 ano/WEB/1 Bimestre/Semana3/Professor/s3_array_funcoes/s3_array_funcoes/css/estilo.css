@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: sans-serif;
+  background-color: #f5cece;
+  padding: 10px 20px; }
+
+header {
+  margin: 20px 0px; }
+
+section {
+  display: flex; }
+
+h4 {
+  padding: 5px 0px;
+}
+ 
+input[type=submit] {
+  margin: 10px 5px;
+  padding: 5px; }  

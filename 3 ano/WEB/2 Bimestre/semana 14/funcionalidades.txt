@@ -1,0 +1,11 @@
+---Exercício 1: Streaming---
+Login de usuário com email e senha
+Histórico do último programa assistido (com temporada e episódio)
+Lista para assistir mais tarde
+Em alta(?)
+
+---Exercício 2: Venda---
+Login de cliente com email e senha
+Cadastro e listagem de produto
+Compra dos produtos através de um pedido
+Mostrar o valor total

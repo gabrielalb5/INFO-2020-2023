@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="author" content="Gabriel Albino">
+        <meta charset="UTF-8">
+        <title>Usando tabelas</title>
+        <style>
+            table{
+                width: 100%;
+            }
+            table, td, th{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th{
+                padding: 15px;
+                background-color: #DE9DB2 ;
+            }
+            tbody{
+                text-align: center;
+                font-weight: bold;
+                background-color: #EAEA9A ;
+            }
+            tfoot{
+                text-align: center;
+                font-weight: bold;
+                background-color: #569FAE ;
+            }
+            caption{
+                color: red;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Capítulo</caption>
+            <thead>
+                <tr>
+                    <th colspan="3">linha 1, colunas 1, 2 e 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>linha 2, coluna 1</td>
+                    <td rowspan="3">linha 2, 3 e 4, coluna 2</td>
+                    <td>linha 2, coluna 3</td>
+                </tr>
+                <tr>
+                    <td>linha 3, coluna 1</td>
+                    <td>linha 3, coluna 3</td>
+                </tr>
+                <tr>
+                    <td>linha 4, coluna 1</td>
+                    <td>linha 4, coluna 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">linha 5, colunas 1, 2 e 3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

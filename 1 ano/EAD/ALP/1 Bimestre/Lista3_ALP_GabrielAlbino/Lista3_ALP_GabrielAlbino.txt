@@ -1,0 +1,184 @@
+Gabriel Albino - 1 ano de informática
+Lista 3 de ALP
+
+
+1) Faça o algoritmo que calcule o valor em Reais,correspondente aos
+dólares que um turista possui no cofre do hotel.O programa deve solicitar os seguintes dados:
+•Quantidade de dólares guardados no cofre;
+•cotação do dólar naquele dia.
+
+Inicio_algoritmo
+	Declare dol, cotacaodol, valor_reais: real;
+	
+	Escreva("Digite a qauntidade de dolares: ");
+	Leia(dol);
+	Escreva("Digite a cotacao do dolar hoje: ");
+	Leia(cotacaodol);
+	
+	valor_reais <- dol*cotacaodol;
+	
+	Escreva("O valor de dolares em reais e = ", valor_reais);
+Fim_algoritmo
+
+Em linguagem C:
+
+#include <stdio.h>
+int main(){
+    
+    float dol, cotacaodol, valor_reais;
+    
+    printf("Digite a qauntidade de dolares: ");
+	scanf("%f", &dol);
+	printf("Digite a cotacao do dolar hoje: ");
+	scanf("%f", &cotacaodol);
+	
+	valor_reais = dol*cotacaodol;
+	
+	printf("O valor de dolares em reais e = %.2f", valor_reais);
+
+    return 0;
+}
+
+===================================================================================================
+
+2) Faça um algoritmo que após a entrada de uma determinada distância entre dois pontos(Km),
+e uma determinada velocidade(Km/h), diga qual o tempo médio que levará para chegada
+à esse local e qual a velocidade em metros/segundos.
+
+Inicio_algoritmo
+	Declare dist, veloc, tempo, veloc_metseg: real;
+	
+	Escreva("Digite a distancia em Km: ");
+	Leia(dist);
+	Escreva("Digite a velocidade (Km/h): ");
+	Leia(veloc);
+	
+	tempo <- dist/veloc;
+    Escreval("O tempo medio e = ", tempo);
+    
+    veloc_metseg <- veloc/3.6;
+    Escreval("A velocidade em m/s e = ", veloc_metseg);
+Fim_algoritmo
+
+Em linguagem C:
+
+#include <stdio.h>
+int main(){
+    
+    float dist, veloc, tempo, veloc_metseg;
+    
+    printf("Digite a distancia em Km: ");
+    scanf("%f",&dist);
+    printf("Digite a velocidade (Km/h): ");
+    scanf("%f",&veloc);
+    
+    tempo = dist/veloc;
+    printf("O tempo medio e = %.2f\n", tempo);
+    
+    veloc_metseg = veloc/3.6;
+    printf("A velocidade em m/s e = %.2f", veloc_metseg);
+    
+    return 0;
+}
+
+===================================================================================================
+
+3) João tem 3 filhos e resolveu dar 2% do seu salário como mesada aos filhos. O primeiro receberá 50%,
+o segundo 30% e o terceiro 20%. Faça um algoritmo que leia o salário de João,
+calcule e mostre o valor que cada filho receberá. 
+
+Inicio_algoritmo
+	Declare sal, mesada, filho1, filho2, filho3: inteiro
+	
+	Escreva("Digite o salario: R$");
+    Leia(sal);
+	
+	mesada <- (sal*2)/100;
+    
+    filho1 <- (mesada*50)/100;
+    filho2 <- (mesada*30)/100;
+    filho3 <- (mesada*20)/100;
+    
+	Escreval("O primeiro filho vai receber: R$", filho1);
+    Escreval("O segundo filho vai receber: R$", filho2);
+    Escreval("O terceiro filho vai receber: R$", filho3);
+Fim_algoritmo
+
+Em linguagem C:
+
+#include <stdio.h>
+int main(){
+    
+    int sal, mesada, filho1, filho2, filho3;
+    
+    printf("Digite o salario: R$");
+    scanf("%d",&sal);
+    
+    mesada = (sal*2)/100;
+    
+    filho1 = (mesada*50)/100;
+    filho2 = (mesada*30)/100;
+    filho3 = (mesada*20)/100;
+    
+    printf("O primeiro filho vai receber: R$%d\n", filho1);
+    printf("O segundo filho vai receber: R$%d\n", filho2);
+    printf("O terceiro filho vai receber: R$%d", filho3);
+    
+    return 0;
+}
+
+===================================================================================================
+
+4) Maria emprestou dinheiro de sua irmã mais velha. Ela irá pagar em 3 meses. Em cada mês o valor
+devido será aumentado com juros de 1%. Faça um algoritmo que leia o valor emprestado,
+calcule e mostre o total devido em cada mês subsequente, leia o valor pago no primeiro mês
+e calcule novamente o valor devido, e assim por diante. Qual será o valor a pagar no último mês?
+Qual foi o total pago? Quanto a mais Maria teve que pagar pelo empréstimo?
+
+Inicio_algoritmo
+	Declare dinheiro, parcela, mes1, mes2, mes3, total, pagou_a_mais: real;
+	
+	Escreva("Digite o valor do emprestimo: R$");
+	Leia(dinheiro);
+	
+	parcela <- dinheiro/3;
+    mes1 <- parcela+(parcela*1)/100;
+    mes2 <- mes1+(mes1*1)/100;
+    mes3 <- mes2+(mes2*1)/100;
+	
+	total <- mes1+mes2+mes3;
+    pagou_a_mais <- (mes1+mes2+mes3)-(dinheiro);
+	
+	Escreval("Maria pagou R$",mes3," no ultimo mes");
+    Escreval("O total pago foi de R$", total);
+    Escreval("Ela pagou R$",pagou_a_mais," a mais.");
+Fim_algoritmo
+	
+Em linguagem C:
+
+#include <stdio.h>
+int main(){
+    
+    float dinheiro, parcela, mes1, mes2, mes3, total, pagou_a_mais;
+
+    printf("Digite o valor do emprestimo: R$");
+    scanf("%f",&dinheiro);
+    
+    parcela = dinheiro/3;
+    mes1 = parcela+(parcela*1)/100;
+    mes2 = mes1+(mes1*1)/100;
+    mes3 = mes2+(mes2*1)/100;
+    
+    total = mes1+mes2+mes3;
+    pagou_a_mais = (mes1+mes2+mes3)-(dinheiro);
+    
+    printf("Maria pagou R$%.2f no ultimo mes\n", mes3);
+    printf("O total pago foi de R$%.2f\n", total);
+    printf("Ela pagou R$%.2f a mais.", pagou_a_mais);
+    
+    return 0;
+}
+
+===================================================================================================
+
+5) Anexado juntamente desse arquivo.

@@ -1,0 +1,204 @@
+/*INDEX*/
+#inicio{
+    background-image: url("../img/LandingBack.jpg");
+}
+#logo{
+    width: 200px;
+    padding: 10px;
+}
+#btnlaranja{
+    background-color: rgba(180, 66, 3, 100%);
+    border: none;
+    color: white;
+    border-radius: 50px;
+    padding: 15px;
+}
+#btnlaranja:hover{
+    background-color: rgba(180, 66, 3, 80%);
+}
+#btnverde{
+    background-color: rgba(79, 81, 60, 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+#btnverde:hover{
+    background-color: rgba(79, 81, 60, 80%);
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+a:hover{
+    color: rgb(130, 136, 74);
+}
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+#msginicio,#formulariocadastro,#msgsucesso{
+    margin-top: 20px;
+}
+
+/*CADASTRO*/
+#cadastro{
+    background-color: rgb(79, 81, 60);
+}
+#formulariocadastro{
+    background-color: rgba(224, 224, 224, 100%);
+    padding: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 10px;
+    color: #4b515d;
+    border: 1px solid #B8B6B6;
+    box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+input,select{
+    background: #fff;
+    color: #525865;
+    border-radius: 4px;
+    border: 1px solid #d1d1d1;
+    box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
+    line-height: 1.45;
+    outline: none;
+    padding: 5px;
+    -webkit-transition: .18s ease-out;
+    -moz-transition: .18s ease-out;
+    -o-transition: .18s ease-out;
+    transition: .18s ease-out;
+  }
+input:hover, select:hover {
+    box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
+input:focus, select:hover {
+    color: #4b515d;
+    border: 1px solid rgb(130, 136, 74);
+    box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*LOGIN*/
+#login{
+    background-color: rgba(79, 81, 60, 100%);
+}
+#linkbranco{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+#linkbranco:hover{
+    color: black;
+}
+#btnpreto{
+    background-color: rgba(0, 0, 0, 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    }
+#btnpreto:hover{
+    background-color: rgba(0, 0, 0, 80%);
+}
+#formulariologin{
+    width: 30%;
+    background-color: rgba(224, 224, 224, 100%);
+    padding: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 10px;
+    color: #4b515d;
+    border: 1px solid #B8B6B6;
+    box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+#container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+#imglogin{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+#imglogin img{
+    width: 100px;
+}
+.logo{
+    padding-left: 43%;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.a_menu{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 20px 5px;
+    background-color: white;
+}
+
+.a_menu:hover{/*quando o mouse passar por cima*/
+    background-color: rgb(130, 136, 74);
+    color: white;
+}
+
+.label_img_vertical{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;/*esconde o menu novamente*/
+}
+
+.body_gr{
+    font-family: arial;
+}
+
+.ul_menu{
+    list-style: none;
+    top: 70px;
+    position: absolute;
+    width: 100%;
+}
+
+.img_menu{
+    width: 40px;
+}
+
+.btn_aparecer_menu[type="checkbox"]{
+    display: none;
+}
+
+.nav_menu{
+    background-color: white;
+    width: 200px;
+    height: 100%;
+    /*left: -350px;*/
+    position: absolute;
+    border: 1px solid #B8B6B6;
+    box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+    /*transition: all .5s;*/
+}
+
+.btn_aparecer_menu[type= "checkbox"]:checked ~ nav{
+    transform: translateX(320px);
+}
+span{
+    justify-content: center;
+}

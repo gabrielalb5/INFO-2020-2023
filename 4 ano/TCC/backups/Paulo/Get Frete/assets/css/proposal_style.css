@@ -1,0 +1,105 @@
+.new_proposal {
+    height: 18px;
+    width: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    border: none;
+
+    font-size: .8rem;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+}
+
+.position_notifications {
+    position: relative;
+    display: flex;
+}
+
+/* Edição do Modal */
+.notifications {
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no_notifications {
+    text-align: center;
+}
+
+.no_notifications img {
+    width: 300px;
+}
+
+.notifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.notification {
+    text-decoration: none;
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 5px;
+    border: 2px solid #5F9CB4;
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: transform .2s;
+    color: rgba(0, 0, 0, .5);
+}
+
+.notification:hover {
+    transform: scale(1.05);
+    color: rgba(0, 0, 0, .5);
+}
+
+.notification img {
+    height: 50px;
+}
+
+.notification p {
+    margin: auto;
+    font-size: 15px;
+}
+
+.show_notification_btn {
+    min-width: 36%;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 15px;
+    background-color: #5F9CB4;
+    color: white;
+}
+.show_notification_btn:hover {
+    color: white;
+}
+
+.read {
+    opacity: 50%;
+}
+
+/* trash */
+
+.footer {
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0px -1px 1px rgba(0, 0, 0, .1);
+    padding: 5px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}

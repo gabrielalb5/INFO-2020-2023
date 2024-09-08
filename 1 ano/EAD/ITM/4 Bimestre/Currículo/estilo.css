@@ -1,0 +1,70 @@
+body{
+	margin: 0 auto;
+	max-width: 800;
+	background-image: url("Fundo.jpg");
+	font-family: sans-serif;
+}
+h1, a{
+	color: #41649C;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #44A591;
+}
+nav a{
+	padding: 10px;
+}
+nav a:hover{
+	color: white;
+	background-color: #41649C;
+	padding: 10px;
+	border-radius: 10px;
+}
+header{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	text-align: right;
+	margin-top: 0px;
+	padding-right: 25px;
+	padding-bottom: 10px;
+	background-color: white;
+}
+nav{
+	background-color:white;
+	margin-top: 150px;
+	padding: 10px;
+	text-align: center;
+}
+nav ul{
+	list-style-type: none;
+}
+nav li{
+	display: inline;
+	padding: 15px;
+}
+article{
+	position: static;
+	background-color: white;
+	padding: 20px;
+	margin: 20px 80px;
+	border: 2px solid #404040;
+	border-radius: 10px; 
+}
+div a{
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    background-color: white;
+	padding: 20px 15px;
+	border: 2px solid #404040;
+    border-radius: 10px;
+}
+div a:hover{
+	color: white;
+	background-color:  #41649C;
+	padding: 20px 15px;
+}

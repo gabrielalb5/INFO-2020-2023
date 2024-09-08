@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+}
+table{
+    width: 100%;
+}
+thead{
+    background-color: #5C939B;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+body{
+    background-color: #98CFD6;
+}
+section, aside{
+    text-align: center;
+    background-color: white;
+    border: 3px solid #5C939B;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+nav{
+    background-color: #5C939B;
+    padding: 10px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+li{
+    margin: 10px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    list-style: none;
+    display: inline;
+}
+footer{
+    text-align: center;
+}

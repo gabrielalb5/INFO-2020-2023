@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="author" content="Gabriel Albino">
+        <meta charset="UTF-8">
+        <title>Formulário | Mais velho</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+            h1, h2{
+                color: #5360B0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Qual o mais velho?</h1>
+        <h2>Formulário</h2>
+        <form name="formulario_avaliativo6" action="executar.php" method="post">
+            <label>Nome 1:</label>
+            <input type="text" id="nome1" name="nome1">
+            <label>Idade 1:</label>
+            <input type="text" id="idade1" name="idade1">
+            <br><br>
+            <label>Nome 2:</label>
+            <input type="text" id="nome2" name="nome2">
+            <label>Idade 2:</label>
+            <input type="text" id="idade2" name="idade2">
+            <br><br>
+            <label>Nome 3:</label>
+            <input type="text" id="nome3" name="nome3">
+            <label>Idade 3:</label>
+            <input type="text" id="idade3" name="idade3">
+            <br><br>
+            <input type="submit" value="Qual o mais velho???">
+        </form>
+        <h2>Algoritmo</h2>
+        <p>Este algoritmo (em linguagem C) apresenta a execução do formulário, comparando as idades entre si e verificando qual é a maior. Veja abaixo:</p>
+        <pre>
+            #include < stdio.h>
+            #include < locale.h>
+            #include < conio.h> <!--Coloquei um espaço depois de "<" nos "#include" pois não estava aparecendo no html.-->
+            int main(void){
+                
+                int idade1, idade2, idade3;
+                char nome1 [30], nome2 [30], nome3 [30];
+                setlocale(LC_ALL,"Portuguese");
+                    
+                printf("Digite 3 nomes e suas respectivas idades.\n");
+                printf("Nome 1: ");
+                scanf("%s",&nome1);
+                printf("Idade: ");
+                scanf("%d",&idade1);
+                    
+                printf("Nome 2: ");
+                scanf("%s",&nome2);
+                printf("Idade: ");
+                scanf("%d",&idade2);
+                    
+                printf("Nome 3: ");
+                scanf("%s",&nome3);
+                printf("Idade: ");
+                scanf("%d",&idade3);
+                    
+                if(idade1>0 && idade2>0 && idade3>0){
+                    if(idade1>idade2 && idade1>idade3){
+                        printf("\nO mais velho é %s (%d anos).", nome1, idade1);
+                    }else if(idade2>idade1 && idade2>idade3){
+                        printf("\nO mais velho é %s (%d anos).", nome2, idade2);
+                    }else if(idade3>idade1 && idade3>idade2){
+                       printf("\nO mais velho é %s (%d anos).", nome3, idade3);
+                    }else{
+                        printf("\nIdades iguais.");
+                    }
+                }else{
+                    printf("\nIdade inválida.");
+                }
+                
+                getch();
+                return 0;
+            }
+        </pre>
+    </body>
+</html>

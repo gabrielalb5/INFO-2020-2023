@@ -1,0 +1,215 @@
+Gabriel Albino - 1 ano de informática
+Lista 2 de ALP
+
+
+1)Faça  um  algoritmo  que leia 5 notas  e  seus  respectivos  pesos,
+calcule  e  mostre  a  média ponderada dessas notas.
+
+
+Inicio_algoritmo
+	Declare n1, n2, n3, n4, n5, p1, p2, p3, p4, p5, m: real;
+
+	Escreval("Digite a primeira nota e seu peso: ");
+    	Leia(n1);
+    	Leia(p1);
+
+    	Escreval("Digite a segunda nota e seu peso: ");
+    	Leia(n2);
+    	Leia(p2);
+
+    	Escreval("Digite a terceira nota e seu peso: ");
+    	Leia(n3);
+    	Leia(p3);
+
+    	Escreval("Digite a quarta nota e seu peso: ");
+    	Leia(n4);
+    	Leia(p4);
+
+    	Escreval("Digite a quinta nota e seu peso: ");
+    	Leia(n5);
+   	Leia(p5);
+
+	m <- ((n1*p1)+(n2*p2)+(n3*p3)+(n4*p4)+(n5*p5))/(p1+p2+p3+p4+p5);
+
+	Escreval("A media ponderada é: ", m);
+Fim_algoritmo
+
+
+Em linguagem C:
+
+#include <stdio.h>
+int main(){
+    
+    float n1, n2, n3, n4, n5, p1, p2, p3, p4, p5, m;
+    
+    printf("Digite a primeira nota e seu peso: ");
+    scanf("%f", &n1);
+    scanf("%f", &p1);
+    printf("Digite a segunda nota e seu peso: ");
+    scanf("%f", &n2);
+    scanf("%f", &p2);
+    printf("Digite a terceira nota e seu peso: ");
+    scanf("%f", &n3);
+    scanf("%f", &p3);
+    printf("Digite a quarta nota e seu peso: ");
+    scanf("%f", &n4);
+    scanf("%f", &p4);
+    printf("Digite a quinta nota e seu peso: ");
+    scanf("%f", &n5);
+    scanf("%f", &p5);
+    
+    m = ((n1*p1)+(n2*p2)+(n3*p3)+(n4*p4)+(n5*p5))/(p1+p2+p3+p4+p5);
+    
+    printf("A media ponderada é: %.2f", m);
+
+    return 0;
+}
+
+
+======================================================================================================================
+
+
+
+2)Faça um algoritmo que leiaum número positivo e maior que zero(n), calcule e mostre:
+
+Inicio_algoritmo
+	Declare n, a, b, c, d, e: real;
+
+	Escreval("Digite um número: ");
+    	Leia(n);
+    	
+    	a <- n*n;
+    	b <- n*n*n;
+    	c <- n*n*n*n;
+    	d <- (n*n)+5;
+   	e <- (n*n)+(n/2)+10;
+    
+    	Escreval("a = ", a);
+    	Escreval("b = ", b);
+    	Escreval("c = ", c);
+    	Escreval("d = ", d);
+    	Escreval("e = ", e);
+Fim_algoritmo
+	
+
+Em linguagem C:
+
+#include <stdio.h>
+int main(){
+    
+    float n, a, b, c, d, e;
+    
+    printf("Digite um número: ");
+    scanf("%f", &n);
+    
+    a = n*n;
+    b = n*n*n;
+    c = n*n*n*n;
+    d = (n*n)+5;
+    e = (n*n)+(n/2)+10;
+    
+    printf("a = %.2f\n", a);
+    printf("b = %.2f\n", b);
+    printf("c = %.2f\n", c);
+    printf("d = %.2f\n", d);
+    printf("e = %.2f", e);
+
+    return 0;
+}
+
+
+
+========================================================================================================================
+
+
+
+3)Faça um algoritmo que leiaum número positivo e maior que zero(n), calcule e mostre:
+
+Inicio_algoritmo
+	Declare n, a: real
+	
+	Escreval("Digite um número: ");
+    	Leia(n);
+    
+    	a <- (n*n+n/2)*(n-((n+1)/2));
+    
+    	Escreval("a = ", a);
+Fim_algoritmo
+
+
+Em linguagem C:
+
+#include <stdio.h>
+int main(){
+    
+    float n, a;
+    
+    printf("Digite um número: ");
+    scanf("%f", &n);
+    
+    a = (n*n+n/2)*(n-((n+1)/2));
+    
+    printf("a = %.2f\n", a);
+
+
+    return 0;
+}
+
+
+=======================================================================================================================
+
+
+
+4)Faça um algoritmo que o usuário informe os valores dos catetos de um triângulo retângulo
+e que ao final escreva a sua hipotenusa.
+
+#include <stdio.h> 
+#include<math.h>
+int main(){
+    
+    float a, b, c, hipotenusa;
+    
+    printf("Digite o primeiro cateto: ");
+    scanf("%f", &b);
+    printf("Digite o segundo cateto: ");
+    scanf("%f", &c);
+    
+    a = (b*b)+(c*c);
+    hipotenusa = sqrt(a);
+    
+    printf("A hipoteusa é: %.2f", hipotenusa);
+
+    return 0;
+}
+
+
+
+======================================================================================================================
+
+
+
+5)Faça um algoritmo que calcule as raízes da equação do segundo grau ax²+bx+c=0,
+pressupondo que seu delta sempre será positivo e sempre terá uma raiz exata. Teste com os seguintes valores: 
+
+
+#include <stdio.h>
+#include <math.h>
+int main(){
+    
+    float a, b, c, r1, r2;
+    
+    printf("Digite o a: ");
+    scanf("%f", &a);
+    printf("Digite o b: ");
+    scanf("%f", &b);
+    printf("Digite o c: ");
+    scanf("%f", &c);
+    
+    r1 = (-b+(sqrt((b*b)-(4*a*c))))/2*a;
+    r2 = (-b-(sqrt((b*b)-(4*a*c))))/2*a;
+    
+    printf("A raiz 1 é = %.2f\n", r1);
+    printf("A raiz 2 é = %.2f ", r2);
+
+    return 0;
+}

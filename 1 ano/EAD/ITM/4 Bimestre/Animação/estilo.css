@@ -1,0 +1,25 @@
+@keyframes ITM{
+    0%{background-color: blue;left: 0px;top: 0px;}
+    25%{transform: rotate(20deg);}
+    50%{background-color: pink;left: 700px;top: 0px;transform: rotate(-20deg);}
+    60%{transform: rotate(-20deg);}
+    70%{transform: rotate(-20deg);}
+    80%{transform: rotate(180deg);}
+    100%{background-color: green;left: 0px;top: 0px;}
+}
+div{
+    border-radius: 10px;
+    border: solid 2px black;
+    width: 70px;			
+    text-align: center;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    position: relative;
+    padding: 5px 0px;
+}
+div{
+    animation-name: ITM;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}

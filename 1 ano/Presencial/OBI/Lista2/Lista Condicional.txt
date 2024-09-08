@@ -1,0 +1,13 @@
+Ler um número e se ele for maior do que 20 imprima a metade do número, caso contrário imprima o numero.
+
+Ler um número e imprimir se ele é par ou ímpar.
+
+Construir um algoritmo que leia dois valores numéricos inteiros e efetue a adição; caso o resultado seja maior que 10, imprima-o.
+
+Entrar com um número e informar se ele é divisível por 3 e por 7.
+
+Construir um algoritmo que leia dois números e efetue a adição. Caso o valor somado seja maior que 20, este deverá ser apresentado somando-se a ele mais 8; caso o valor somado seja menor ou igual a 20, este deverá ser apresentado subtraindo-se 5.
+
+Ler um número e imprimir se ele é positivo, negativo ou nulo.
+
+Leia 3 números e descubra o maior valor entre eles.

@@ -1,0 +1,21 @@
+1. Criar um algoritmo que imprima a média aritmética entre três números.
+
+2. Ler um número inteiro e imprimir seu sucessor e seu antecessor.
+
+3. Ler um número real e imprimir a terça parte deste número.
+
+4. Entrar com dois números inteiros e imprimir a seguinte saída:
+	dividendo:
+	divisor:
+	quociente:
+	resto:
+	
+5. Entrar com quatro números e imprimir a média ponderada, sabendo-se que os pesos são respectivamente: 1, 2, 3 e 4.
+
+6. Entrar com um número no formato CDU e imprimir invertido: UDC. (Exemplo: 123, sairá 321.) O número deverá ser armazenado em outra variável antes de ser impresso.
+
+7. Entrar com o lado de um quadrado e imprimir:
+
+perimetro:
+area:
+diagonal:

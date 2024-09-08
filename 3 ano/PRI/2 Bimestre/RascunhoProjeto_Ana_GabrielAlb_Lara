@@ -1,0 +1,41 @@
+---CONTEXTUALIZAÇÃO---
+
+1° Parágrafo: Indústria da moda incluindo o fast fashion definição
+	A Indústria têxtil é a área focada na transformação de fios em tecidos para confecção das vestimentas utilizadas no cotidiano. Ela foi uma das primeiras indústrias criadas - considerada uma das pioneiras - sendo muito presente na história humana "as primeiras evidências conhecidas de fabricação de têxteis, utilizando a técnica de tecelagem, datam de cerca de 5000 a.C." (SILVA, 2021). Essa área possui uma grande importância econômica na atualidade, assim como cita FIEG, 2018, o Brasil é a 5ª maior industria têxtil do mundo e 4ª no segmento de vestuário, com uma produção média de 1,3 milhões de têxteis e 6,71 milhões de vestuário. Em 2018 a produção manufatureira têxtil de 2 milhões de toneladas no Brasil teve um faturamento de US$ 50,3 bilhões (PRADO, 2018).
+	Uma das vertentes da indústria têxtil mais presentes da atualidade é a chamada "fast-fashion". A principal vantagem desse tipo de produção é a acessibilidade de consumo e a movimentação do mercado trabalhista, que gera muitos empregos. O termo literalmente significa "moda rápida", consiste em um processo em que a roupa é desenvolvida, usada e descartada rapidamente. Baseia-se em desenhar, fabricar e vender uma grande quantidade de roupas, reciclando conceitos e usando material de baixo custo.
+
+2° Parágrafo: Problemas do fast fashion poluição
+	O fast-fashion se tornou um grande mercado econômico, e com isso, a produção em massa de roupas trouxe consequências negativas para o  meio ambiente. "A indústria têxtil é o segundo setor que mais polui o meio ambiente[...] essa indústria emite cerca de 8 a 10% das emissões globais de gases de efeito estufa, libera 500 mil toneladas de microfibras sintéticas nos oceanos todos os anos e polui o solo por conta do uso de pesticidas na plantação de fibras naturais"(ZOZ, 2020). Atualmente o mercado têxtil apresenta uma grande produção de roupas e com essa ocorre o descarte em massa de tecidos, corantes e materiais poluentes que geram impactos no meio ambiente. Hoje, atribui-se mais valor à novidade do que ao vestuário propriamente dito, na sua função primordial que é a de proteger o corpo de intempéries e danos físicos de uma forma confortável e funcional. A roupa, enquanto vestuário de moda, não passa de mera mercadoria rapidamente descartável (REFOSCO et al., 2011).
+
+3° Parágrafo: Sobre a moda sustentável
+	A moda sustentável busca diminuir impactos ambientais causados pelo ser humano, através de fatores como "unir e reorganizar a utilização de recursos renováveis; o não acúmulo de mais resíduos no ecossistema; o direcionamento para a concepção de produtos com recursos provenientes de comunidades locais; a união entre a produção com apoio social e a consciência coletiva da extração; e, a utilização eficaz dos recursos", como cita REFOSCO et al.(2011, p. 4-5).
+
+4° Parágrafo: Solução
+	Uma das soluções interessantes pode ser a construção de um software tanto com objetivos de conscientização de usuários quanto a real busca por consumir da moda sustentável.
+
+---DESCRIÇÃO DO PROBLEMA---
+5° Parágrafo: Citar trabalhos
+O artigo "A moda no contexto da sustentabilidade" (SCHULTE, N. K. et al) apresenta questões consideráveis para compreender o conceito de sustentabilidade atrelado à moda e à indústria têxtil, assim como os artigos de Refosco et al. (2011), Anicet e Rüthschilling (2013), Kohler e Lopes (2008). Outros dados importantes são trazidos por Pontin e Waismann (2021), Ramm e Morais (2022) em artigos que dizem sobre a busca de usuários pela moda sustentável, através de brechós online por exemplo. Enquanto Fantinel (2021) apresenta em sua monografia a implementação de um aplicativo - ainda em desenvolvimento - com funções de organização de guarda-roupa pessoal, composição de looks, rede social para vendas, trocas ou doações de peças usadas (brechó-virtual).
+
+6° Parágrafo: Problema generalizados
+Entretanto, a resolução dos problemas que a indústria têxtil apresenta ainda são pouco exploradas. Muito se divulga sobre a conscientização, mas mesmo assim são poucos os consumidores que aderem à pautas de moda sustentável, apoiando, por exemplo, brechós e bazares. Outro problema é a escassez de soluções eficientes, como a apresentada por Fantinel (2021), que propõe uma aplicação com objetivos mais próximos ao que a moda sustentável deseja.
+
+---OBJETIVOS---
+Geral: Divulgar a moda sustentável através de brechós e bazares, afim de conscientizar a sociedade sobre os problemas ambientais gerados pela indústria têxtil. 
+Específicos:
+- Apresentar os problemas ambientais causados pela indústria têxtil;
+- Difundir as ideias da moda sustentável;
+- Normalizar a prática de reutilização de peças;
+- Popularizar brechós e bazares da região;
+- Diminuir o descarte de roupas através de um sistema de trocas.
+
+---METODOLOGIA---
+Como vocês pretenderm desenvolver? Quais linguagens de programação e tecnologias serão necessárias para o desenvolvimento? Quando o sistema estiver pronto como vocês pretendem avalia-lo para verificar se o seu objetivo foi atingido? Quem é o público alvo da avaliação?
+
+Para desenvolver o sistema será utilizada a linguagem PHP com suporte em JavaScript (Ajax, JQuery e JSON), scripts do banco de dados estruturados em SQL, teste funcionais e innterface gráfica desenvolvida na linguagem HTML. A avaliação do sistema ocorrerá por meio de usuários engajados com o assunto abordado, que poderão retornar suas opiniões através de um questionário qualitativo de múltipla escolha, podendo exprimir o grau de satisfação com os diferentes aspectos da aplicação web.
+
+---RESULTADOS ESPERADOS---
+É esperado que os usuários do sistema desenvolvido, tenham uma melhor noção da causa da moda sustentável e abracem a mesma por meio da popularização de brechós e bazares, assim diminuindo o descarte da indústria têxtil combatendo os ideais do fast-fashion.
+
+
+ popularize a moda sustentável, com mais usuários comprometidos a comprar conscientemente e escolher brechós e bazares.

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <header>
+            <nav class="navbar">
+                <div class="navbar-logo"><a href="index.html"><img src="assets/img/LookingMenu.png" alt="Looking" class="logo"></a></div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="cadastro.html">Cadastre-se</a></li>
+                        <li><a href="login.html">Entrar</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    <main class="cadastro">
+        <div class="containercad">
+            <div class="formcadastro">
+                <form class="form" action="cadastro2.html">
+                    <div class="form-header">
+                        <h1 class="cadastroh1">Cadastro</h1>
+                    <div class="login-button">
+                        <a href="login.html">Entrar</a>
+                    </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-box">
+                           <label for="nome">Nome</label>
+                           <input type="text" id="nome" name="nome" placeholder="Digite seu primeiro nome"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="cpf">CPF</label>
+                            <input type="number" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" min="0"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" min="0"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="tel">Telefone</label>
+                            <input type="number" id="tel" name="tel" placeholder="(xx) xxxx-xxxx" min="0"/>
+                        </div>
+                        
+                        <div class="input-box">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="joao@email.com"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" name="senha" placeholder="Digite sua senha"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="csenha">Confirme a senha</label>
+                            <input type="password" id="csenha" name="csenha" placeholder="Digite sua senha novamente"/>
+                        </div>
+                    </div>
+
+                    <div class="continue-button">
+                        <button><a href="cadastro2.html">Continuar</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="form-image">
+                <img src="assets/img/medindo.svg" alt="ilustração">
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="footer-logo"><a href="#"><img src="assets/img/LookingMenu.png" alt="Looking" class="logo-rodape"></a></div>
+        <p>Copyright&copy; 2022 IFSP - Campus Araraquara</p>
+    </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

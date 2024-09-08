@@ -1,0 +1,3 @@
+function exibirMsg(){
+    alert("Teste");
+}

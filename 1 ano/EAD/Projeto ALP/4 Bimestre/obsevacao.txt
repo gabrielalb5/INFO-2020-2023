@@ -1,0 +1,4 @@
+Professora, deixarei anexado o exercício 1 apenas, pois o exercício 2
+contém algum possível erro que o faz repetir infinitamente. Fiz o
+teste de mesa dele, mas também executei no Dev c++ para ver se 
+os números se repetiam infinitamente, e obtive o mesmo resultado.

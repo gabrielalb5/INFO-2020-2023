@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <title>Cadastro de loja</title>
+</head>
+<body>
+    <div>
+        <header>
+            <nav class="navbar">
+                <div class="navbar-logo"><a href="index.html"><img src="assets/img/LookingMenu.png" alt="Looking" class="logo"></a></div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="cadastro.html">Cadastre-se</a></li>
+                        <li><a href="login.html">Entrar</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    <main class="cadastro2">
+        <div class="containercad">
+            <div class="formcadastro">
+                <form class="form" action="SucessoLoja.html">
+                    <div class="form-header">
+                        <h1 class="cadastroh2">Cadastrar loja</h1>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-box">
+                           <label for="NomeLoja">Nome</label>
+                           <input type="text" id="NomeLoja" name="NomeLoja" placeholder="Digite o nome de sua loja"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="EnderecoLoja">Endereço</label>
+                            <input type="text" id="EnderecoLoja" name="EnderecoLoja" placeholder="Digite o endereço de sua loja"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="TelLoja">Telefone</label>
+                            <input type="number" id="TelLoja" name="TelLoja" placeholder="(xx) xxxx-xxxx" min="0"/>
+                        </div>
+                        
+                        <div class="input-box">
+                            <label for="EmailLoja">E-mail</label>
+                            <input type="email" id="EmailLoja" name="EmailLoja" placeholder="lojajoao@email.com"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="NichoLoja">Nicho</label>
+                            <input type="text" id="NichoLoja" name="NichoLoja" placeholder="Digite uma especificação de sua loja"/>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="DescricaoLoja">Descrição</label>
+                            <input type="text" id="DescricaoLoja" name="DescricaoLoja" placeholder="Digite uma descrição para sua loja"/>
+                        </div>
+                    </div>
+
+                    <div class="continue-button2">
+                        <button><a href="SucessoLoja.html">Concluir</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="form-image">
+                <img src="assets/img/medindo.svg" alt="ilustração">
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="footer-logo"><a href="#"><img src="assets/img/LookingMenu.png" alt="Looking" class="logo-rodape"></a></div>
+        <p>Copyright&copy; 2022 IFSP - Campus Araraquara</p>
+    </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
